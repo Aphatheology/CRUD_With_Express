@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "83a64518-f89c-4453-8135-7bdb958e0ba4",
+		"name": "TopUniverse - BE Task 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13406320"
+	},
+	"item": [
+		{
+			"name": "Get All Data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				},
+				"description": "This will send a GET Request to fetch all data."
+			},
+			"response": []
+		},
+		{
+			"name": "Get Data with ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				},
+				"description": "This will send a GET Request to fetch data with the specified ID."
+			},
+			"response": []
+		},
+		{
+			"name": "Create/Add Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				},
+				"description": "This will add the data in the Request Body to the Data."
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Data with ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": null
+						}
+					]
+				},
+				"description": "This is to update any part of the data of the specified ID"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Data with ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": null
+						}
+					]
+				},
+				"description": "Delete data with a specified ID"
+			},
+			"response": []
+		}
+	]
+}
